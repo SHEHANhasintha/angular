@@ -1,3 +1,5 @@
+var mongoose = require('mongoose');
+console.log('nice');
 var BookSchema = new mongoose.Schema({
   isbn: String,
   title: String,
