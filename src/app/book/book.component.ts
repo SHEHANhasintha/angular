@@ -10,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+var hero = 'Windstorm';
+   }
 
 ngOnInit() {
-
+  var hero = 'Windstorm';
 }
 }
