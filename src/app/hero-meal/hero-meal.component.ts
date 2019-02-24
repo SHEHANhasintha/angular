@@ -16,4 +16,8 @@ export class HeroMealComponent implements OnInit {
 
   }
 
+  goBack(): void {
+  this.location.back();
+}
+
 }

@@ -11,8 +11,7 @@
 
 <ul class="heroes">
 	<li *ngFor = "let hero of heroes" 
-	[class.selected] = "hero === selectedHero"
-	(click)="onSelect(hero)">
+	[class.selected] = "hero === selectedHero">
 		<span class="badge">{{hero.id}}</span>{{hero.name}}<span>  {{hero.beat}}</span>
 	</li>
 </ul>
@@ -21,7 +20,9 @@
 <h3 *ngFor = "let food of heroes" (click)="nowRun(food)">{{food.beat}}</h3>
 -->
 
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!--
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
 
 <app-messages></app-messages>
+
+
