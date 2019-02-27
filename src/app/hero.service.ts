@@ -21,8 +21,8 @@ export class HeroService {
   }
 
   getHero(id: number): Observable<Hero> {
-  	//TODO: send the message _after_ fetching the hero
-  	this.messageService.add(`HeroService: fetch hero id=${id}`);
-  	return of(HEROES.find(hero => hero.id === id));
+    //TODO: send the message _after_ fetching the hero
+    this.messageService.add(`HeroService: fetch hero id=${id}`);
+    return of(HEROES.find(hero => hero.id === id));
   }
 }
